@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="index.css">
+    <!--utilizamos dos archivos css para dar estilo al html uno general y otro idividual-->
+    <link rel="icon" href="img/icono_redondo.ico"> <!--con esta linea ponemos un icono en la pestaña del navegador-->
+    <title>Bienvenido a Alishock</title>
+</head>
+
+<body class="inicio"> <!--en esta pagina solo cargamos un video de presentacion, para que funcione el autoplay tuve que desactivar el sonido (politica de chrome)
+ en el caso de ver con otro explorador que no sea chrome, se puede activar el sonido. a futuro agregare un boton con js para activar el volumen-->
+    <div class="content_inicio">
+        <br>
+        <div class="video_inicio">
+            <video autoplay muted="muted" loop>
+                <source src="videos/Video_ALISHOCK.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="boton_inicio">
+            <a href="inicio.html">- INGRESAR -</a>
+        </div>
+    </div>
+</body>
+
+</html>

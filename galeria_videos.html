@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icono_redondo.ico">
+    <title>AliShock - Servicios</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="galerias.css">
+    <!--utilizamos dos archivos css para dar estilo al html uno general y otro compartido con galeria de imagenes-->
+    <link rel="stylesheet" href="style.css"> <!-- utilizamos los iconos que bajamos de icomoon-->
+    <script src="https://kit.fontawesome.com/0c3c3d5cb7.js" crossorigin="anonymous"></script>
+    <!--Para utilizar los iconos de fontawesom en el footer-->
+</head>
+
+<body>
+    <header>
+        <div class="barra_menu">
+            <a href="#" class="bt-menu" title="MENU"><span class="icon-menu"></span>MENU</a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <div id="menu_izq">
+                    <li><a href="inicio.html"><span class="icon-home3"></span>Inicio</a></li>
+                    <li><a href="servicios.html"><span class="icon-briefcase"></span>Servicios</a></li>
+                    <li><a href="recomendaciones.html"><span class="icon-earth"></span>Recomendaciones</a></li>
+                    <li><a href="contacto.html"><span class="icon-mail2"></span>Contacto</a></li>
+                </div>
+                <div id="menu_der">
+                    <li><a href="galeria_imagenes.html"><span class="icon-images"></span>Fotos</a></li>
+                    <li><a href="galeria_videos.html" id="servicios_disabled"><span class="icon-play"></span>Videos</a></li>
+                </div>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h1>GALERIA DE VIDEOS</h1>
+        <hr>
+        <section class="content_videos"><!--aqui solo utilice iframe para mostrar videos de youtube-->
+            <div class="cajasv"><iframe class="videos" src="https://www.youtube.com/embed/I5J9pTxr5Ds" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="cajasv"><iframe class="videos" src="https://www.youtube.com/embed/FNRofX1Ja4U" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="cajasv"><iframe class="videos" src="https://www.youtube.com/embed/9xM3YCTVTRo" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="cajasv"><iframe class="videos" src="https://www.youtube.com/embed/z7JwE7kDTxw" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="cajasv"><iframe class="videos" src="https://www.youtube.com/embed/WDj86MKk8ok" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="cajasv"><iframe class="videos" src="https://www.youtube.com/embed/nJEKnLNN9j4" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="cajasv"><iframe class="videos" src="https://www.youtube.com/embed/hxWRA6kUIow" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="cajasv"><iframe class="videos" src="https://www.youtube.com/embed/a3Pm4YcIPZg" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+            <div class="cajasv"><iframe class="videos" src="https://www.youtube.com/embed/ozIkvOQRDmM" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe></div>
+        </section>
+    </main>
+    <br>
+    <hr>
+    <footer>
+        <div id="logo_footer">
+            <a href="inicio.html"><img src="img/logo redondo.png" width="50" height="50"
+                    title="Ir pagina Principal"></a>
+        </div>
+        <div id="logo_ubicacion">
+            <a href="ubicacion.html"><img src="img/como llegar.png" width="50" height="50"
+                    title="Direccion/Como Llegar/Horarios"></a>
+        </div>
+        <div id="iconos_footer">
+            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"
+                    title="Twitter"></i></a>
+            <a href="https://www.facebook.com/people/Ali-Shock-Aimogasta/100011903176787" target="_blank"><i
+                    class="fa fa-facebook" aria-hidden="true" title="Facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"
+                    title="Instagram"></i></a>
+
+            <p>Derechos reservados @2020</p>
+        </div>
+    </footer>
+    <script src="javascript/jquery-1.3.2.min.js"></script><!--estos scrips permiten el uso del archivo js y de jquery para el funcionamiento del menu-->
+    <script src="javascript/menu.js"></script>
+</body>
+
+</html>

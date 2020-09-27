@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icono_redondo.ico">
+    <title>AliShock - Servicios</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="galerias.css">
+    <!--utilizamos dos archivos css para dar estilo al html uno general y otro compartido con galeria de videos-->
+    <link rel="stylesheet" href="style.css"> <!-- utilizamos los iconos que bajamos de ocomoon-->
+    <script src="https://kit.fontawesome.com/0c3c3d5cb7.js" crossorigin="anonymous"></script>
+    <!--Para utilizar los iconos de fontawesom en el footer-->
+</head>
+
+<body>
+    <header>
+        <div class="barra_menu">
+            <a href="#" class="bt-menu" title="MENU"><span class="icon-menu"></span>MENU</a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <div id="menu_izq">
+                    <li><a href="inicio.html"><span class="icon-home3"></span>Inicio</a></li>
+                    <li><a href="servicios.html"><span class="icon-briefcase"></span>Servicios</a></li>
+                    <li><a href="recomendaciones.html"><span class="icon-earth"></span>Recomendaciones</a></li>
+                    <li><a href="contacto.html"><span class="icon-mail2"></span>Contacto</a></li>
+                </div>
+                <div id="menu_der">
+                    <li><a href="#" id="servicios_disabled"><span class="icon-images"></span>Fotos</a></li>
+                    <li><a href="galeria_videos.html"><span class="icon-play"></span>Videos</a></li>
+                </div>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h1>GALERIA DE FOTOS - TRABAJOS REALIZADOS</h1>
+        <h5>Pasa el mause sobre la imagen para ampliar o da click segun el dispositivo.</h5>
+        <hr>
+        <section class="content_fotos"> <!--aqui con css y la clase imagenes, uso el hover y scale para crear un efecto de lupa en las imagenes-->
+            <div class="cajas"><img class="imagenes" id="item1" src="img/gal_fotos/IMG-20200912-WA0001.jpg"
+                    alt="galeria_de_imagenes"></div>
+            <div class="cajas"><img class="imagenes" id="item2" src="img/gal_fotos/IMG-20200912-WA0002.jpg"
+                    alt="galeria_de_imagenes"></div>
+            <div class="cajas"><img class="imagenes" id="item3" src="img/gal_fotos/IMG-20200912-WA0003.jpg"
+                    alt="galeria_de_imagenes"></div>
+            <div class="cajas"><img class="imagenes" id="item4" src="img/gal_fotos/IMG-20200912-WA0004.jpg"
+                    alt="galeria_de_imagenes"></div>
+            <div class="cajas"><img class="imagenes" id="item5" src="img/gal_fotos/IMG-20200912-WA0005.jpg"
+                    alt="galeria_de_imagenes"></div>
+            <div class="cajas"><img class="imagenes" id="item6" src="img/gal_fotos/IMG-20200912-WA0006.jpg"
+                    alt="galeria_de_imagenes"></div>
+            <div class="cajas"><img class="imagenes" id="item8" src="img/gal_fotos/IMG-20200912-WA0008.jpg"
+                    alt="galeria_de_imagenes"></div>
+            <div class="cajas"><img class="imagenes" id="item10" src="img/gal_fotos/IMG-20200912-WA0010.jpg"
+                    alt="galeria_de_imagenes"></div>
+            <div class="cajas"><img class="imagenes" id="item11" src="img/gal_fotos/IMG-20200912-WA0011.jpg"
+                    alt="galeria_de_imagenes"></div>
+            <div class="cajas"><img class="imagenes" id="item12" src="img/gal_fotos/IMG-20200912-WA0012.jpg"
+                    alt="galeria_de_imagenes"></div>
+            <div class="cajas"><img class="imagenes" id="item13" src="img/gal_fotos/IMG-20200912-WA0013.jpg"
+                    alt="galeria_de_imagenes"></div>
+            <div class="cajas"><img class="imagenes" id="item14" src="img/gal_fotos/IMG-20200912-WA0014.jpg"
+                    alt="galeria_de_imagenes"></div>
+            <div class="cajas"><img class="imagenes" id="item15" src="img/gal_fotos/IMG-20200912-WA0015.jpg"
+                    alt="galeria_de_imagenes"></div>
+        </section>
+    </main>
+    <br>
+    <hr>
+    <footer>
+        <div id="logo_footer">
+            <a href="inicio.html"><img src="img/logo redondo.png" width="50" height="50"
+                    title="Ir pagina Principal"></a>
+        </div>
+        <div id="logo_ubicacion">
+            <a href="ubicacion.html"><img src="img/como llegar.png" width="50" height="50"
+                    title="Direccion/Como Llegar/Horarios"></a>
+        </div>
+        <div id="iconos_footer">
+            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"
+                    title="Twitter"></i></a>
+            <a href="https://www.facebook.com/people/Ali-Shock-Aimogasta/100011903176787" target="_blank"><i
+                    class="fa fa-facebook" aria-hidden="true" title="Facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"
+                    title="Instagram"></i></a>
+
+            <p>Derechos reservados @2020</p>
+        </div>
+    </footer>
+    <script src="javascript/jquery-1.3.2.min.js"></script><!--estos scrips permiten el uso del archivo js y de jquery para el funcionamiento del menu-->
+    <script src="javascript/menu.js"></script>
+</body>
+
+</html>

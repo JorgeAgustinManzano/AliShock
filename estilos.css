@@ -1,0 +1,309 @@
+
+/*Estilos Gral / inicio*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+html{
+    background-image: url(img/Fondo_Alishock_pequeño.png);
+    background-repeat: repeat;
+    background-position: top;
+}
+body{
+    background: none;
+}
+
+
+.content{
+    background-image: url("img/Fondo_principal.jpg");
+    background-repeat: repeat-y;
+    background-position: top;
+    background-size: cover;
+    position: relative;
+}
+
+#servicios_disabled, #inicio_disabled{
+    pointer-events: none;
+    color: gray;
+    background: rgb(35, 35, 94);
+}
+header{
+    width: 100%;
+    
+}
+header nav{
+    background: rgb(2, 2, 71);
+    width: 90%;
+    margin: 1.3rem auto;
+    max-width: 1240;
+    border-radius: 10px;
+}
+.barra_menu{
+    display: none;
+}
+header nav ul{
+    list-style: none;
+    overflow: hidden;
+}
+header nav ul #menu_izq li{
+    float: left;
+}
+header nav ul #menu_der li{
+    float: right;
+}
+
+header nav ul li a{
+    color: white;
+    font-weight: 550;
+    padding: 1rem;
+    display: block;
+    text-decoration: none;
+}
+hr,section{
+    width: 90%;
+    margin: 0 auto;
+}
+
+section p{
+    text-align: justify;
+    padding-right: 1rem;
+    padding-left: 1rem;
+
+}
+header nav ul li span{
+    margin-right: 10px;
+}
+
+header nav ul li a:hover{
+    background: salmon;
+}
+
+.imagen_central{
+    float: left;
+    width: 40%;
+    height: 20rem;
+    margin: 3rem;
+    margin-top: 8rem;
+    margin-left: 1rem;
+    z-index: 10;
+}
+.imagen_secundaria{
+    float: right;
+    width: 15%;
+    height: 15rem;
+    margin: 2rem;
+    margin-left: 3rem;
+    z-index: 11;
+}
+
+#articulo_uno{
+    margin-bottom: 5rem;
+}
+.imagen_central img, .imagen_secundaria img{
+    width: 100%;
+    border: groove 5px salmon;
+}
+
+.parrafo_central, .parrafo_secundario, .parrafo_final{
+    position: relative;
+    color: skyblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.3rem;
+    z-index: 12;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    
+}
+.titulo_parrafo{
+    position: relative;
+    color: rgb(99, 188, 223);
+    font-size: 2rem;
+    z-index: 13;
+    text-align: left;
+    padding-top: .5rem;
+}
+footer{
+    width: 90%; 
+    height: 5rem;   
+    margin: 10px auto;
+    padding-top: 5px;
+    text-align: center;
+    background: rgb(2, 2, 71);
+    border-radius: 10px;
+    overflow: hidden;
+    font-weight: bold;
+}
+
+footer a,footer p{
+    color: white;
+    margin-top: 1rem;
+}
+
+
+
+#logo_footer{
+    float: left;
+    margin-top: .8rem;
+    margin-left: 1rem;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+
+}
+
+
+#logo_ubicacion{
+    float: right;
+    margin-top: .8rem;
+    margin-right: 1rem;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+#iconos_footer a:hover, #logo_footer:hover, #logo_ubicacion:hover{
+    box-shadow: 0 0 10px rgb(245, 242, 242)
+}
+
+#iconos_footer a:hover, #logo_footer:hover, #logo_ubicacion:hover{
+    margin: 1rem;
+    background: blue;
+    border: 3px solid salmon;
+    transition-property: all;
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+#articulo_uno, #articulo_dos{
+    animation-duration: 2s;
+    animation-name: derecha;
+}
+@keyframes derecha {
+    from {
+      margin-left: -100%; 
+    }
+  
+    to {
+      margin-left: 0%; 
+    }
+  }
+
+
+/*------------MEDIA QUERY---------------------*/
+@media screen and (max-width:800px){
+    header nav{
+        border-radius: 0;
+        width: 80%;
+        height: 100%;
+        margin: 0;
+        position: fixed;
+        left: -100%;
+        z-index: 20;
+    }
+
+    header nav ul #menu_izq li, header nav ul #menu_der li{
+        display: block;
+        float:none;
+        border-bottom: solid 1px white;
+    }
+    .barra_menu{
+        display: block;
+        width:100%;
+        background: rgb(2, 2, 71);
+    }
+    .barra_menu .bt-menu{
+        display: block;
+        padding: 20px;
+        background: rgb(2, 2, 71);
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.8rem;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        
+    }
+    .barra_menu span{
+        float: right;
+        font-size: 2.5rem;
+    }
+    .imagen_central, .imagen_secundaria{
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        height: auto;
+    }
+    .imagen_central{
+        width: 90%;
+    }
+    .imagen_central img, .imagen_secundaria img{
+        width: 97%;
+    }
+    #segundo_parrafo h3{
+        font-size: 1rem;
+        color: white;
+    }
+    #primer_parrafo iframe{
+
+        width:80%;
+        height: 70%;
+    }
+    .video_inicio video{
+        width: 70%;
+        height: 70%;
+    }
+    .boton_inicio a{
+        font-size: .7rem;
+        padding: .5rem;
+    }
+    .content_servicios button label h2{
+        font-size: 1rem;
+    }
+    #articulo_uno{
+        margin-bottom: 3rem;
+    }
+    .titulo_parrafo{
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width:400px){
+    .barra_menu .bt-menu{
+        font-size: 1.3rem;
+    }
+    .barra_menu span{
+        font-size: 2rem;
+    }
+   
+    .titulo_parrafo{
+        font-size: 1.3rem;
+    } 
+    #iconos_footer p{
+        font-size: .6rem;
+    }
+    .titulo_parrafo{
+        clear: both;
+        text-align: center;
+    }
+    hr{
+        display: none;
+    }
+    .imagen_secundaria img{
+        display: none;
+    }
+    #aside_serv{
+        display: none;
+    }
+    .content_servicios button label h2{
+        font-size: .7rem;
+    }
+    #articulo_uno{
+        margin-bottom: 0rem;
+    }
+
+
+}

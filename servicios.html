@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icono_redondo.ico">
+    <title>AliShock - Servicios</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="servicios.css">
+    <!--utilizamos el archivo css para dar estilo al html-->
+    <link rel="stylesheet" href="style.css"> <!-- utilizamos los iconos que bajamos de ocomoon-->
+    <script src="https://kit.fontawesome.com/0c3c3d5cb7.js" crossorigin="anonymous"></script>
+    <!--Para utilizar los iconos de fontawesom en el footer-->
+</head>
+
+<body>
+    <header>
+        <div class="barra_menu">
+            <a href="#" class="bt-menu" title="MENU"><span class="icon-menu"></span>MENU</a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <div id="menu_izq">
+                    <li><a href="inicio.html"><span class="icon-home3"></span>Inicio</a></li>
+                    <li><a href="#" id="servicios_disabled"><span class="icon-briefcase"></span>Servicios</a></li>
+                    <li><a href="recomendaciones.html"><span class="icon-earth"></span>Recomendaciones</a></li>
+                    <li><a href="contacto.html"><span class="icon-mail2"></span>Contacto</a></li>
+                </div>
+                <div id="menu_der">
+                    <li><a href="galeria_imagenes.html"><span class="icon-images"></span>Fotos</a></li>
+                    <li><a href="galeria_videos.html"><span class="icon-play"></span>Videos</a></li>
+                </div>
+            </ul>
+        </nav>
+        <hr>
+        <br>
+    </header>
+    <section class="content_servicios">
+        <!--Aqui utilice float y para poder hacer que aparezcan y desaparezcan utilice un checkbox para poder aplicar asi un display none y despues un display block al activarlo y oculte la casilla de verificacion, tome un ejemplo de la web y lo adapte a mis necesidades
+        , la base esta trabajada en GRID-->
+        <div id="descrips">
+            <div class="recuadro_serv">
+                <button><label for="chk">
+                        <h2>Alisado Definitivo</h2>
+                    </label></button>
+                <input type="checkbox" id="chk" style="visibility: hidden;">
+                <div id="ocultar">
+                    <img src="img/img_servicios/alisado-capilar.jpg" alt="Alisado">
+                    <p><b>El alisado capilar</b> es una técnica que permite arreglar la apariencia de tu cabello, controlando el frizz, y convertirlo de un cabello esponjoso a encrespado a uno muy liso. .
+                    </p>
+                </div>
+            </div>
+            <div class="recuadro_serv">
+                <button><label for="chk2">
+                        <h2>Botox Capilar</h2>
+                    </label></button>
+                <input type="checkbox" id="chk2" style="visibility: hidden;">
+                <div id="ocultar2">
+                    <img src="img/img_servicios/botox-capilar.jpg" alt="Alisado">
+                    <p><b>El botox capilar</b> es un tipo de tratamiento intensivo que hidrata y le da brillo al cabello, dejándolo más bonito, un poco más liso, sin frizz.</p>
+                </div>
+            </div>
+            <div class="recuadro_serv">
+                <button><label for="chk3">
+                        <h2>Shock de Keratina</h2>
+                    </label></button>
+                <input type="checkbox" id="chk3" style="visibility: hidden;">
+                <div id="ocultar3">
+                    <img src="img/img_servicios/shock-capilar.jpg" alt="Alisado">
+                    <p><b>El shock de Keratina</b> es un tratamiento reestructurante de larga duración. Gracias a sus componentes de keratina, siliconas, ceramidas y aceites naturales, restaura el cabello en profundidad desde la parte interna hacia la externa. Se puede aplicar sobre todo tipo de cabello: con coloración, reflejos o decolorados.
+                    </p>
+                </div>
+            </div>
+            <div class="recuadro_serv">
+                <button><label for="chk4">
+                        <h2>Nutriciones</h2>
+                    </label></button>
+                <input type="checkbox" id="chk4" style="visibility: hidden;">
+                <div id="ocultar4">
+                    <img src="img/img_servicios/nutricion-capilar.jpg" alt="Alisado">
+                    <p><b>Una nutrición capilar</b> busca reponer los nutrientes grasos o lípidos del pelo. La porosidad, el exceso de volumen y el frizz aparecen en los cabellos carentes de una nutrición. Un tratamiento de nutrición capilar manejado adecuadamente proporciona un cabello brillante, con peso y flexibilidad.
+                    </p>
+                </div>
+            </div>
+            <div class="recuadro_serv">
+                <button><label for="chk5">
+                        <h2>Corte de Puntas</h2>
+                    </label></button>
+                <input type="checkbox" id="chk5" style="visibility: hidden;">
+                <div id="ocultar5">
+                    <img src="img/img_servicios/corte-de-puntas.jpg" alt="Alisado">
+                    <p><b>Split Ender Pro</b>, con esta tecnica se Remueve de forma segura las puntas secas, dañadas, quemadas, quebradizas y abiertas en minutos. Elimina las puntas sin afectar el largo del pelo.Es más Fácil, Rápido y Seguro que la tijera..
+                    </p>
+                </div>
+            </div>
+            <div class="recuadro_serv">
+                <button><label for="chk6">
+                        <h2>Tintura Capilar</h2>
+                    </label></button>
+                <input type="checkbox" id="chk6" style="visibility: hidden;">
+                <div id="ocultar6">
+                    <img src="img/img_servicios/tintura-capilar.jpg" alt="Alisado">
+                    <p><b>La tintura capilar</b>, o tinte de cabello, es una preparación química que se utiliza para cambiar el color del cabello de una persona. La tintura para cabello se utiliza para cubrir las canas dado que las canas son un signo de edad avanzada.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <aside id="aside_serv">
+            <img src="img/propagandas.gif" alt="propaganda" title="Propaganda">
+        </aside>
+
+    </section>
+    <br>
+    <hr>
+    <footer>
+        <div id="logo_footer">
+            <a href="inicio.html"><img src="img/logo redondo.png" width="50" height="50"
+                    title="Ir pagina Principal"></a>
+        </div>
+        <div id="logo_ubicacion">
+            <a href="ubicacion.html"><img src="img/como llegar.png" width="50" height="50"
+                    title="Direccion/Como Llegar/Horarios"></a>
+        </div>
+        <div id="iconos_footer">
+            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"
+                    title="Twitter"></i></a>
+            <a href="https://www.facebook.com/people/Ali-Shock-Aimogasta/100011903176787" target="_blank"><i
+                    class="fa fa-facebook" aria-hidden="true" title="Facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"
+                    title="Instagram"></i></a>
+
+            <p>Derechos reservados @2020</p>
+        </div>
+    </footer>
+    <script src="javascript/jquery-1.3.2.min.js"></script><!--estos scrips permiten el uso del archivo js y de jquery para el funcionamiento del menu-->
+    <script src="javascript/menu.js"></script>
+</body>
+
+</html>

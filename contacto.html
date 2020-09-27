@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icono_redondo.ico">
+    <title>AliShock - Servicios</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="contacto.css">
+    <!--utilizamos dos archivos css para dar estilo al html uno general y uno individual-->
+    <link rel="stylesheet" href="style.css"> <!-- utilizamos los iconos que bajamos de icomoon-->
+    <script src="https://kit.fontawesome.com/0c3c3d5cb7.js" crossorigin="anonymous"></script>
+    <!--Para utilizar los iconos de fontawesom en el footer-->
+</head>
+
+<body>
+    <header>
+        <div class="barra_menu"> <!--la base de menu fue creado siguiendo un video de FalconMaster dado que usa un poco de codigo js para mostrar el mismo al verlo en otros dispositivos
+        por mi parte agregue in id para desactivar la opcion del menu que corresponda la pagina activa ya que no tiene sentido que pueda reingresar a la misma pagina-->
+            <a href="#" class="bt-menu" title="MENU"><span class="icon-menu"></span>MENU</a>
+        </div>
+        <nav class="nav">
+            <ul>
+                <div id="menu_izq">
+                    <li><a href="inicio.html"><span class="icon-home3"></span>Inicio</a></li>
+                    <li><a href="servicios.html"><span class="icon-briefcase"></span>Servicios</a></li>
+                    <li><a href="recomendaciones.html"><span class="icon-earth"></span>Recomendaciones</a></li>
+                    <li><a href="#" id="servicios_disabled"><span class="icon-mail2"></span>Contacto</a></li>
+                </div>
+                <div id="menu_der">
+                    <li><a href="galeria_imagenes.html"><span class="icon-images"></span>Fotos</a></li>
+                    <li><a href="galeria_videos.html"><span class="icon-play"></span>Videos</a></li>
+                </div>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <section class="content_contacto">
+        <div id="formulario">
+            <h2 id="titulo_form">Formulario de contacto:</h2>
+            <hr>
+            <form action="show_data_form.html">
+                <div>
+                    <label class="labels" for="nombre">Nombre y Apellido:</label>
+                    <input class="inputs" type="text" id="name" name="name" placeholder="Ingrese su nombre completo">
+    
+                    <label class="labels" for="telefono">Telefono:</label>
+                    <input class="inputs" type="text" id="telefono" name="telefono" placeholder="Ingrese su num telefono">
+    
+                    <label class="labels" for="email">Direccion de Em@il:</label>
+                    <input class="inputs" type="mail" id="mail" name="mail" placeholder="Ingrese su mail">
+    
+                    <label class="labels" for="fnacimiento">Fecha de Nacimiento:</label>
+                    <input class="inputs" type="date" id="fnacimiento" name="fnacimiento">    
+                </div>
+                
+                <p class="registro"> Genero:<br>
+                    <input type="radio" name="genero" value="Hombre">Hombre
+                    <input type="radio" name="genero" value="Mujer">Mujer
+                    <input type="radio" name="genero" value="Otro" checked>Otro
+                </p>
+                <p>Motivo:
+                    <select id="tipocons" name="tipocons">
+                        <option value="turno">Turno</option>
+                        <option value="consulta">Consulta</option>
+                        <option value="sugerencias">Sugerencia</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </p>
+                <p>Comentarios:<br>
+                    <textarea name="message" id="message" rows="3" cols="50%"></textarea>
+                </p>
+                <p id="botones_form">
+                    <input class="botones" type="submit" value="Enviar">
+                    <input class="botones" type="reset" value="Limpiar">
+                </p>
+            </form>
+        </div>
+        <div id="propaganda_der"> <!--en este caso incorpore una imagen que al hacer click accede al mail por defecto para enviar un email a alishock
+        al cambiar a menor tamaño de pantalla el mismo se minimiza y se posiciona a la izq del formulario-->
+            <a href="mailto:alishockaimogasta@gmail.com" target="_blank"><img src="img/imagen_contacto_vertical_@.jpg" alt="imagen_mail" title="Enviar un mail a Alishock"></a>
+        </div>
+
+    </section>
+    <br>
+    <hr>
+    <footer>
+        <div id="logo_footer">
+            <a href="inicio.html"><img src="img/logo redondo.png" width="50" height="50"
+                    title="Ir pagina Principal"></a>
+        </div>
+        <div id="logo_ubicacion">
+            <a href="ubicacion.html"><img src="img/como llegar.png" width="50" height="50"
+                    title="Direccion/Como Llegar/Horarios"></a>
+        </div>
+        <div id="iconos_footer">
+            <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"
+                    title="Twitter"></i></a>
+            <a href="https://www.facebook.com/people/Ali-Shock-Aimogasta/100011903176787" target="_blank"><i class="fa fa-facebook" aria-hidden="true"
+                    title="Facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"
+                    title="Instagram"></i></a>
+
+            <p>Derechos reservados @2020</p>
+        </div>
+    </footer>
+    <script src="javascript/jquery-1.3.2.min.js"></script><!--estos scrips permiten el uso del archivo js y de jquery para el funcionamiento del menu-->
+    <script src="javascript/menu.js"></script>
+</body>
+
+</html>

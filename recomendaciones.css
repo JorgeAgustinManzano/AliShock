@@ -1,0 +1,98 @@
+section div h2{
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+section div h3, section div p{
+  margin: .3rem;
+}
+.content_recomendaciones{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  gap: .3rem;
+  background-color: rgba(246, 248, 250, 0.6);
+  padding: .5rem;
+}
+#covid19 img{
+  width: 100%;
+}
+#covid19{
+  margin-bottom: .5rem;  
+}
+#covid19:hover{
+  border: solid 2px rgb(255, 0, 0);
+}
+section p{
+  padding: 0;
+  text-align: justify;
+  font-size: .9rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+section h3{
+  color: rgb(175, 25, 25);
+  text-decoration: underline;
+}
+section h2{
+  color: red;
+}
+section hr{
+  width: 100%;
+}
+.articulo_recomendaciones{
+  background-color: rgba(33, 94, 133, .3);
+  padding: .7rem;
+}
+.content_recomendaciones{
+    animation-duration: 2s;
+    animation-name: parrafo;
+}
+@keyframes parrafo {
+    from {
+      margin-left: 100%;
+      width: 300%
+    }
+  
+    to {
+      margin-left: 5%;
+      width: 90%;
+    }
+  }
+
+#temporal{
+  text-align: center;
+  color: red;
+  font-size: 3rem;
+}
+
+#temporal{
+    animation-duration: 2s;
+    animation-name: colors;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+  }
+  
+  @keyframes colors {
+    from {
+      color: green;
+      margin-left: 10%;
+      
+    }
+  
+    to {
+      color: red;
+      margin-left: -10%;
+
+
+    }
+  }
+  @media screen and (max-width:800px){
+  #temporal{
+    font-size: 2.5rem;
+  }
+  }
+
+  @media screen and (max-width:400px){
+  #temporal{
+    font-size: 1.5rem;
+  }
+  }

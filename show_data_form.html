@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="img/icono_redondo.ico">
+        <title>AliShock - Servicios</title>
+        <link rel="stylesheet" href="estilos.css">
+        <link rel="stylesheet" href="galerias.css">
+        <!--utilizamos el archivo css para dar estilo al html-->
+        <link rel="stylesheet" href="style.css"> <!-- utilizamos los iconos que bajamos de ocomoon-->
+        <script src="https://kit.fontawesome.com/0c3c3d5cb7.js" crossorigin="anonymous"></script>
+        <!--Para utilizar los iconos de fontawesom en el footer-->
+
+        <style>
+                /*como este archivo es solo para probar el formulario, los estilos los cree dentro del mismo, ya que despues sera eliminado: NaN: NaN;
+        ademas bloqueo casi todos los accesos solo permitiendo los accesos a las redes sociales y volver al formulario de contacto*/
+                .content_show_data {
+                        display: block;
+                        width: 60%;
+                        margin: 0 auto;
+                }
+                main h1{
+                        font-size: 1.5rem;
+                }
+                #Table_Form_rec{
+                        margin-top: 1rem;
+                }
+
+                table {
+
+                        background-color: indigo;
+                        text-align: center;
+                        border: groove 5px gray;
+                        font-size: 1.1rem;
+                        width: 100%;
+                        color: white;
+                }
+
+                table td {
+                        margin: 1rem;
+                        padding: 1rem;
+                }
+
+                #Table_Form_rec td {
+                        margin: .6rem;
+                        padding: .6rem;
+                        font-size: 1.1rem;
+                }
+
+                @media screen and (max-width:800px) {
+                        table, #Table_form_rec td {
+                                font-size: .7;
+                        }
+                }
+
+                @media screen and (max-width:400px) {
+                        .content_show_data {
+                                margin-left: 1rem;
+                        }
+                        .titulo_form font{
+                                font-size: 1rem;
+                        }
+                        table, #Table_form_rec td {
+                                font-size: .5;
+                        }
+                }
+        </style>
+</head>
+
+<body>
+        <header>
+                <div class="barra_menu">
+                        <a href="#" class="bt-menu" title="MENU"><span class="icon-menu"></span>MENU</a>
+                </div>
+                <nav class="nav">
+                        <ul>
+                                <div id="menu_izq">
+                                        <li><a href="inicio.html" id="servicios_disabled"><span
+                                                                class="icon-home3"></span>Inicio</a></li>
+                                        <li><a href="servicios.html" id="servicios_disabled"><span
+                                                                class="icon-briefcase"></span>Servicios</a></li>
+                                        <li><a href="recomendaciones.html" id="servicios_disabled"><span
+                                                                class="icon-earth"></span>Recomendaciones</a></li>
+                                        <li><a href="contacto.html"><span class="icon-mail2"></span>Contacto</a></li>
+                                </div>
+                                <div id="menu_der">
+                                        <li><a href="galeria_imagenes.html" id="servicios_disabled"><span
+                                                                class="icon-images"></span>Fotos</a></li>
+                                        <li><a href="galeria_videos.html" id="servicios_disabled"><span
+                                                                class="icon-play"></span>Videos</a></li>
+                                </div>
+                        </ul>
+                </nav>
+                <hr>
+        </header>
+        <main>
+                <h1>SIMULADOR BD</h1>
+                <hr>
+                <section class="content_show_data">
+                        <p align=center>&nbsp;</p>
+                        <h1 class="titulo_form" align=center>
+                                <font size="+3">Datos recibidos del formulario</font>
+                        </h1>
+
+                        <table id="Table_Form_rec" border="1" align=center width="400">
+                                <tr>
+                                        <th align="center">Descripcion</th>
+                                        <th align="center">Seleccion</th>
+                                </tr>
+
+                                <script language="javascript">
+                                        var args = location.search.substr(1).split('&');
+                                        for (var i = 0; i < args.length; ++i) {
+                                                var parts = args[i].split('=');
+                                                if (parts != null) {
+                                                        var field = parts[0];
+                                                        var value = parts[1];
+                                                        if (value == null) {
+                                                                value = "null"
+                                                        }
+                                                        else {
+                                                                value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+                                                        }
+
+                                                        document.writeln('<tr><td align="center">' + field + '</td>');
+                                                        document.writeln('<td align="center">' + value + '</td></tr>');
+                                                }
+                                        }
+                                </script>
+
+                                <noscript>
+                                        <tr>
+                                                <td>
+                                                        <p>You need to turn on Javascript in your browser.</p>
+
+                                                        <p>In Microsoft Internet Explorer 4 or greater:</p>
+                                                        <ul>
+                                                                <li>From the "Tools" menu (in IE 4, it's the "View"
+                                                                        menu), select "Internet Options".</li>
+                                                                <li>Click on the "Security" tab.</li>
+                                                                <li>Click on the "Custom Level" button. (In IE 4, select
+                                                                        "Custom"
+                                                                        and then click on "Settings...".)</li>
+                                                                <li>Under "Active scripting" make sure "Enable" is
+                                                                        selected.</li>
+                                                        </ul>
+
+                                                        <p>In Netscape version 4 or greater:</p>
+                                                        <ul>
+                                                                <li>From the <b>Edit</b> menu, select
+                                                                        <b>Preferences</b>.</li>
+                                                                <li>In the <b>Category</b> list on the left, click on
+                                                                        the word "Advanced".</li>
+                                                                <li>In the panel on the right, make sure "Enable
+                                                                        JavaScript" is checked.</li>
+                                                                <li>Click the <b>OK</b> button.</li>
+                                                        </ul>
+
+                                                </td>
+                                        </tr>
+                                </noscript>
+
+                        </table>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                </section>
+        </main>
+        <br>
+        <hr>
+        <footer>
+                <div id="logo_footer">
+                        <a href="contacto.html"><img src="img/logo redondo.png" width="50"
+                                        height="50" title="Volver a Form. Contacto"></a>
+                </div>
+                <div id="logo_ubicacion">
+                        <a href="ubicacion.html" id="servicios_disabled"><img src="img/como llegar.png" width="50"
+                                        height="50" title="Opcion Desactivada"></a>
+                </div>
+                <div id="iconos_footer">
+                        <a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"
+                                        title="Twitter"></i></a>
+                        <a href="https://www.facebook.com/people/Ali-Shock-Aimogasta/100011903176787" target="_blank"><i
+                                        class="fa fa-facebook" aria-hidden="true" title="Facebook"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"
+                                        aria-hidden="true" title="Instagram"></i></a>
+
+                        <p>Derechos reservados @2020</p>
+                </div>
+        </footer>
+        <script src="javascript/jquery-1.3.2.min.js"></script>
+        <!--estos scrips permiten el uso del archivo js y de jquery para el funcionamiento del menu-->
+        <script src="javascript/menu.js"></script>
+</body>
+
+</html>

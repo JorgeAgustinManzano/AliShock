@@ -1,0 +1,53 @@
+/*Index - pagina de inicio*/
+.inicio{
+    background-image: url(img/Fondo_Alishock_pequeño.png);
+    background-repeat: repeat;
+    background-position: top;
+}
+.content_inicio *{
+    position: relative;
+    z-index: 15;
+}
+.video_inicio video{
+    width: 65%;
+    display: block;
+    margin: 0 auto;
+    margin-top: .5rem;
+    border: groove 5px white;
+    border-radius: 2rem;
+}
+
+.boton_inicio{
+    display: block;
+    margin-top: 1rem;
+}
+.boton_inicio a{
+    display: block;
+    margin: .6rem auto;
+    width: 40%;
+    text-align: center;
+    border-radius: 1rem;
+    border: groove 3px rgb(228, 2, 58);
+    background-color: rgb(2, 94, 94);
+    color: rgb(228, 2, 58);
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.boton_inicio a:active{
+    background-color: salmon;
+    color: black;
+}
+@media screen and (max-width:800px){
+    .video_inicio video{
+        width: 95%;
+        margin-top: 5rem;
+    }
+}
+@media screen and (max-width:400px){
+    .boton_inicio a{
+        font-size: 1rem;
+    }
+}
